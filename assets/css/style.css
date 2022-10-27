@@ -558,6 +558,28 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .offcanvas_menu .container {
   position: relative;
 }
+
+.offcanvas_menu .categories_container {
+  position: relative;
+  
+}
+
+.offcanvas_menu .categories_container a:hover {
+  color: #a77432;
+  
+}
+
+.offcanvas_menu .categories_container .pod_categories1 {
+  display: none;
+  
+}
+
+.offcanvas_menu .categories_container .categori {
+  text-align: center;
+  width: 80px;
+  margin: 5px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .offcanvas_menu {
     display: block;
@@ -632,6 +654,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .offcanvas_main_menu li ul.sub-menu {
   padding-left: 20px;
 }
+
+
 
 .offcanvas_footer {
   margin-top: 50px;
@@ -1497,7 +1521,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .main_menu nav > ul > li .mega_menu {
   position: absolute;
-  min-width: 100%;
+  /*min-width: 100%;*/
   padding: 0 30px 0 30px;
   background: #ffffff;
   box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
@@ -1526,6 +1550,15 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 500;
   display: block;
   margin-bottom: 12px;
+}
+
+.cat-menu {
+  width: 100px;
+  text-align: center;
+}
+
+.cat-menu:hover {
+  color: #a77432;
 }
 .mega_menu_inner > li > a:hover {
   color: #a77432;
@@ -8698,6 +8731,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .panel-heading .panel-title {
   margin-bottom: 0;
+}.panel-heading-cat .panel-title {
+  margin-bottom: 0;
 }
 .panel-heading .panel-title a {
   background: #ffffff;
@@ -8717,9 +8752,31 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   box-shadow: none;
   font-weight: 500;
 }
+
+.panel-heading-cat .panel-title a {
+  background: #ffffff;
+  display: block;
+  padding: 0;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  -webkit-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: 500;
+}
 @media only screen and (max-width: 767px) {
   .panel-heading .panel-title a {
     padding: 10px 38px 10px 15px;
+    font-size: 13px;
+  }
+  .panel-heading-cat .panel-title a {
     font-size: 13px;
   }
 }
@@ -8745,8 +8802,34 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   z-index: 4;
   margin-top: 0px;
 }
+/*.panel-heading-cat .panel-title a::before {
+  position: absolute;
+  content: "\f0d7";
+  font-family: 'FontAwesome';
+  color: #333;
+  font-size: 20px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 25px;
+  bottom: -11px;
+  right: -11px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  border-radius: 100%;
+  z-index: 4;
+  margin-top: 0px;
+}*/
 
 .panel-heading .panel-title a[aria-expanded="true"]::before {
+  background: #fff;
+  color: #a77432;
+}
+.panel-heading-cat .panel-title a[aria-expanded="true"]::before {
   background: #fff;
   color: #a77432;
 }
@@ -8755,6 +8838,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   border-radius: 3px 3px 0 0;
   color: #ffffff;
   background: #a77432;
+}
+
+.faq-style-wrap {
+  z-index: 10;
 }
 
 .panel.panel-default {
@@ -8773,6 +8860,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding: 15px;
   border: 1px solid #ddd;
   background: #ffffff;
+}
+
+.panel-body-cat {
+  padding: 0;
+  border: 1px solid #ddd;
+  background: #ffffff;
+  width: 250px;
+  position: absolute;
+  left: 0;
+  z-index: 10;
 }
 
 /* 20. services page css here */
